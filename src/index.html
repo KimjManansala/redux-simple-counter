@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Simple Counter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <div class="app">
-        <h1 id="counterValue">0</h1>
-        <button id="increment">+1</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body>
+    <div class="app" id='app'>
+      <h1 id="counterValue">0</h1>
+      <button id="increment">+1</button>
+      <button id="decrement">-1</button>
+      <button id="addFive">+5</button>
+      <button id="minusFive">-5</button>
+    <select id="color-pick">
+      <option value="black">black</option>
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="pink">pink</option>
+    </select>
+
+        <form id='counter-starter'>
+            <input id='counter' type ='number'class= 'counterStart'placeholder="Start at a number!">
+            <button>Submit!</button>
+        </form>
     </div>
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.min.js"></script>
     <script src="reducer.js"></script>
     <script src="render.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

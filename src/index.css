@@ -1,0 +1,18 @@
+.app{
+    margin: auto;
+    width: fit-content;
+}
+
+.app > *{
+    font-size: 30px;
+}
+
+
+#counterValue{
+    font-size: 40px;
+}
+
+.counterStart{
+    width: fit-content;
+
+}
